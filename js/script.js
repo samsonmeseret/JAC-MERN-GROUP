@@ -3,16 +3,15 @@
 // console.log("first")
 
 // Variable
-// var, let and const 
+// var, let and const
 
 // Decler
 
 // note: you can re-decler and re-assign it
 var someVar;
-var someVar = "some Var"
+var someVar = "some Var";
 // someVar = "other value"
 // console.log(someVar)
-
 
 // someVar = "new Value"
 // console.log(someVar)
@@ -21,27 +20,24 @@ var someVar = "some Var"
 // console.log(anyName)
 
 // you can't re-decler but you can re-assign
-let car = "BMW"
-car = "TESLA"
+let car = "BMW";
+car = "TESLA";
 
 // console.log(car)
 
 // both you can't
-const phone = "iphone"
+const phone = "iphone";
 // phone = "SUMSUNG"
 
 // console.log(phone)
 
-
 var one, two, three;
 
-one=1
-two=2
-three=3
+one = 1;
+two = 2;
+three = 3;
 
 // console.log(one, two, three)
-
-
 
 // DataType
 
@@ -51,29 +47,27 @@ three=3
 
 // 1. Number
 
-let num = -34.0223
+let num = -34.0223;
 // console.log(typeof num)
 //  2. String
 
-let str = "example 56 dsgfui"
+let str = "example 56 dsgfui";
 // console.log(typeof str)
 
 // 3. Boolean (true || false)
 
-const todayIsFriday = true // camel case 
+const todayIsFriday = true; // camel case
 // camel: someVar
 // pascal: SameVar
 // snake: same_var
 
 // console.log(typeof todayIsFriday)
 
-let nulish = null // javascript bug (mistake)
+let nulish = null; // javascript bug (mistake)
 
 // console.log(typeof nulish)
 
-var nothing = undefined
-
-
+var nothing = undefined;
 
 // console.log(typeof nothing)
 
@@ -84,31 +78,27 @@ var nothing = undefined
 // ---------
 // ---------
 
-let arr = ["some", 56, false]
+let arr = ["some", 56, false];
 // console.log(arr[1])
 
 // Object
 
 let obj = {
-    firstName: "Mickle"
-}
-
+  firstName: "Mickle",
+};
 
 // console.log( obj["firstName"])
 // console.log( obj.firstName)
 
-
-
 // OPERATORS
 
-
 // OPERATORS
-let myNumber = 3
+let myNumber = 3;
 // postfix increment
 // myNumber ++
 
 // let y = myNumber++
-let y = myNumber --
+let y = myNumber--;
 
 // console.log(myNumber)
 // console.log(y)
@@ -120,21 +110,18 @@ let y = myNumber --
 
 // Concatenation (+)
 
-// 1, arthimatic 
+// 1, arthimatic
 // 2. concatenation
-
 
 // let num2 = "saom"
 // let strg = "Gebeyew"
 
-
 // let totalSum = strg + num2
 
-
 // console.log(totalSum)
-let  varOne = "34"  //---> NAN
+let varOne = "34"; //---> NAN
 // console.log(typeof varOne)
-const varTwo = 34 
+const varTwo = 34;
 
 // week typing (js future)
 // == : only checks the value
@@ -144,7 +131,6 @@ const varTwo = 34
 // console.log(varOne !== varTwo)
 // console.log(varOne === varTwo)
 // console.log(varOne == varTwo)
-
 
 // console.log(2<2)
 
@@ -175,20 +161,15 @@ const varTwo = 34
 // samson
 // samuel
 
-
-
 // console.log("C" < "BZ")
 
 // console.log("a".charCodeAt(0))
 // console.log(45 < 61)
 
-
 // console.log(2 < "12")
 // console.log(2 == 2.0)
 
-
 // console.log(2 < "John");
-
 
 // FUNCTIONS
 
@@ -210,14 +191,13 @@ const varTwo = 34
 // ---- PArameter and Argument
 
 function adder(a, b) {
-    //internally how functions declare variable by the name of parameters
-    // var a;
-    // var b;
+  //internally how functions declare variable by the name of parameters
+  // var a;
+  // var b;
 
-    console.log(a)
-    console.log(b)
-    // return a + b
-    
+  console.log(a);
+  console.log(b);
+  // return a + b
 }
 
 //arguments
@@ -236,7 +216,6 @@ function adder(a, b) {
 //     console.log(some[0])
 // }
 
-
 // someCase(4,5,6,7,8)
 
 // function rareCase() {
@@ -245,14 +224,11 @@ function adder(a, b) {
 
 // rareCase(4,5,6,7)
 
-
 // Function Declration  ways
 
 // traditional
 // function declaration
-function name(params) {
-    
-}
+function name(params) {}
 //function expression
 // let tradFunExp = function (){  // annonamus functions
 // console.log("test")
@@ -270,7 +246,6 @@ function name(params) {
 
 // arrowFunction(5, 5)
 
-
 // CONDITIONS
 
 // IF ELSE CONDITIONS
@@ -281,7 +256,7 @@ function name(params) {
 //     }else{
 //         console.log("i will work || study ")
 //     }
-    
+
 // }
 
 // paly(3>2)
@@ -316,7 +291,6 @@ function name(params) {
 //             break;
 //     }
 
-
 // }
 
 // play("zimbiye")
@@ -332,11 +306,10 @@ function name(params) {
 //         default:
 //             break;
 //     }
-    
+
 // }
 
 // textBased("bye")
-
 
 // MOdern OPerators
 
@@ -345,22 +318,70 @@ function name(params) {
 // function paly(isFreeTime) {
 
 //     return isFreeTime? console.log("i will play") : console.log("i will study")
-    
+
 // }
 
-
 // console.log(paly(false))
-
 
 // False || True
 
 // function today(isMonday) {
 
 //     isMonday && console.log("today is monday, my worest day !")
-    
+
 // }
 
 // today(false)
 
+// Loops
 
+// 1) for loop
+// 2) while loop
 
+// for loop
+
+// console.log("my task");
+// console.log("my task");
+// console.log("my task");
+// console.log("my task");
+// console.log("my task");
+// i = i + 1
+
+let string = "MERN";
+
+let array = ["abebe", "kebede", "chala", "anyone"];
+
+let numArray = [3, 5, 7, 4, 1, 8];
+
+// console.log(string[1]);
+
+for (let i = 0; i < numArray.length; i++) {
+  //   console.log(numArray[i] * 2);
+  if (numArray[i] % 2 == 0) {
+    // break;
+    continue;
+    console.log(numArray[i]);
+  } else {
+    console.log(numArray[i]);
+  }
+  //   continue;
+  //   break;
+}
+
+// for (let i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+// while loop
+
+let j = 0;
+
+let something = true;
+// game
+
+// level 1 = true
+
+while (j <= 5) {
+  //   console.log(j);
+  //   j++;
+}
