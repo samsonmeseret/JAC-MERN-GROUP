@@ -10,7 +10,6 @@
 // note: you can re-decler and re-assign it
 var someVar;
 var someVar = "some Var";
-// someVar = "other value"
 // console.log(someVar)
 
 // someVar = "new Value"
@@ -47,7 +46,7 @@ three = 3;
 
 // 1. Number
 
-let num = -34.0223;
+// let num = -34.0223
 // console.log(typeof num)
 //  2. String
 
@@ -89,8 +88,6 @@ let obj = {
 
 // console.log( obj["firstName"])
 // console.log( obj.firstName)
-
-// OPERATORS
 
 // OPERATORS
 let myNumber = 3;
@@ -173,8 +170,8 @@ const varTwo = 34;
 
 // FUNCTIONS
 
-// let num = 30
-// let num2 = 30
+let num = 30;
+let num2 = 30;
 
 //Function declration
 // any function have something to return
@@ -347,26 +344,26 @@ function name(params) {}
 // console.log("my task");
 // i = i + 1
 
-let string = "MERN";
+// let string = "MERN";
 
-let array = ["abebe", "kebede", "chala", "anyone"];
+// let array = ["abebe", "kebede", "chala", "anyone"];
 
-let numArray = [3, 5, 7, 4, 1, 8];
+// let numArray = [3, 5, 7, 4, 1, 8];
 
-// console.log(string[1]);
+// // console.log(string[1]);
 
-for (let i = 0; i < numArray.length; i++) {
-  //   console.log(numArray[i] * 2);
-  if (numArray[i] % 2 == 0) {
-    // break;
-    continue;
-    console.log(numArray[i]);
-  } else {
-    console.log(numArray[i]);
-  }
-  //   continue;
-  //   break;
-}
+// for (let i = 0; i < numArray.length; i++) {
+//   //   console.log(numArray[i] * 2);
+//   if (numArray[i] % 2 == 0) {
+//     // break;
+//     continue;
+//     console.log(numArray[i]);
+//   } else {
+//     console.log(numArray[i]);
+//   }
+//   //   continue;
+//   //   break;
+// }
 
 // for (let i = 0; i < array.length; i++) {
 //   console.log(array[i]);
@@ -374,14 +371,146 @@ for (let i = 0; i < numArray.length; i++) {
 
 // while loop
 
-let j = 0;
+// let j = 0;
 
-let something = true;
-// game
+// let something = true;
+// // game
 
-// level 1 = true
+// // level 1 = true
 
-while (j <= 5) {
-  //   console.log(j);
-  //   j++;
+// while (j <= 5) {
+//   //   console.log(j);
+//   //   j++;
+// }
+
+// let obj ={
+//   name: "Samson",
+//   id: 4243,
+//   major:"Economics"
+// }
+
+function Student(id, name, major) {
+  this.id = id;
+  this.name = name;
+  this.major = major;
 }
+
+Student.prototype.learn = function learn() {
+  return `${this.name} is Learning ...`;
+};
+
+const Sami = new Student(4145, "Samson", "Economics");
+
+// console.log(Sami.name, Sami.id, Sami.major);
+// console.log(Sami.learn());
+// console.log(Sami.learn());
+
+class Teacher {
+  constructor(id, name, salary, major) {
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+    this.major = major;
+  }
+  teach() {
+    return `${this.name} is Teaching ...`;
+  }
+}
+
+// Teacher.prototype.teach = function () {
+//   return `${this.name} is Teaching ...`;
+// };
+
+let Abebe = new Teacher(4345, "Abebe", 20000, "Ecomics");
+// console.log(Abebe);
+
+// let Str = "mern";
+// console.log(Str.toUpperCase());
+// let Numb = 34.6;
+
+// console.log(Number.isInteger(Numb));
+
+// console.log(Array.prototype);
+// console.log(String.prototype);
+// console.log(Number.prototype);
+
+// DataType Object
+// String
+// Array
+// Number
+
+// Other Object
+// Date
+// Maths
+
+// console.dir(String);
+
+// let ethiopia = "Ethiopia";
+
+// console.log(typeof ethiopia);
+// console.log(ethiopia.length);
+// console.log(ethiopia.toUpperCase());
+
+// <!DOCTYPE html>
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+//     <!-- <script defer  src="./js/script.js"></script> -->
+//     <!-- <script async src="./js/script.js"></script> -->
+//     <!-- <link rel="stylesheet" href="style.css" /> -->
+//     <title>JavaScript Practice</title>
+//   </head>
+//   <body>
+//     <section>
+//       <h1 style="color: blueviolet">Example</h1>
+//     </section>
+//     <script src="./js/script.js"></script>
+//   </body>
+// </html>
+
+// DOM - javascript programming language
+// let object = {
+//   html: {
+//     head: {
+//       meta: {},
+//     },
+//     body: {
+//       section: {
+//         h1: {},
+//       },
+//       script: {},
+//     },
+//   },
+// };
+
+// DOM Manipulation
+
+// DOM element selecting
+//single
+// console.log(document);
+let firstDiv = document.getElementById("first");
+// console.log(firstDiv); HTML Element
+
+let secondDiv = document.querySelector(".first__div");
+// console.log(secondDiv);
+
+//multiple
+
+let allDiv = document.querySelectorAll("div");
+console.log(allDiv); // NodeList
+
+let allLists = document.getElementsByTagName("li");
+// console.log(allLists); //HTML Collections
+
+let allLinks = document.getElementsByClassName("lists");
+console.log(allLinks); //HTML Collection
+
+// traversing
+
+let ulZParent = document.getElementById("ul");
+console.log(ulZParent.lastElementChild);
+
+let firstLi = document.querySelector(".one");
+console.log(firstLi.nextElementSibling);
