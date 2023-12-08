@@ -499,18 +499,63 @@ let secondDiv = document.querySelector(".first__div");
 //multiple
 
 let allDiv = document.querySelectorAll("div");
-console.log(allDiv); // NodeList
+// console.log(allDiv); // NodeList
 
 let allLists = document.getElementsByTagName("li");
 // console.log(allLists); //HTML Collections
 
 let allLinks = document.getElementsByClassName("lists");
-console.log(allLinks); //HTML Collection
+// console.log(allLinks); //HTML Collection
 
 // traversing
 
 let ulZParent = document.getElementById("ul");
-console.log(ulZParent.lastElementChild);
+// console.log(ulZParent.lastElementChild);
 
 let firstLi = document.querySelector(".one");
-console.log(firstLi.nextElementSibling);
+// console.log(firstLi.nextElementSibling);
+
+const newLi = document.createElement("li");
+newLi.textContent = "new Li";
+ulZParent.append(newLi);
+
+let childTwo = document.getElementById("two");
+
+// childTwo.classList.add("red");
+
+// childTwo.className += " red";
+
+// childTwo.setAttribute("class", "red tx-large");
+
+//class
+//id
+
+//depens on the tag
+//href fro a tag
+//width && height for img tag
+
+// childTwo.style.display = "none";
+
+// ulZParent.removeChild(childTwo);
+
+// ulZParent.removeChild(newLi);
+
+// console.log(newLi);
+//innerHTML == returns the html
+//textContent && innerText == returns only texts
+
+// console.log(ulZParent.innerText);
+
+const button = document.getElementById("dark-mode");
+
+// button.addEventListener("mouseover", function () {
+//   document.body.classList.toggle("dark");
+// });
+
+// button.onclick = function () {
+//   document.body.classList.toggle("dark");
+// };
+
+function darkMode() {
+  document.body.classList.toggle("dark");
+}
