@@ -144,6 +144,49 @@ when we install Node.js. Here are the most common code Node modules:
 folder, Accessing and open a file, editing a file, copying a file, Removing a file or
 a directory
 
+```
+fs.mkdir(folderPath, { recursive: true }, (err) => {
+  if (err) {
+    console.error("Error creating folder:", err);
+  } else {
+    console.log("Folder created successfully.");
+  }
+});
+
+fs.writeFile(filePath, fileContent, 'utf-8', (err) => {
+  if (err) {
+    console.error('Error creating file:', err);
+  } else {
+    console.log('File created successfully.');
+  }
+});
+
+
+fs.appendFile(filePath, additionalContent, 'utf-8', (err) => {
+  if (err) {
+    console.error('Error appending to file:', err);
+  } else {
+    console.log('Content appended successfully.');
+  }
+});
+
+fs.readFile(filePath, 'utf-8', (err, data) => {
+  if (err) {
+    console.error('Error reading file:', err);
+  } else {
+    console.log('File content:', data);
+  }
+});
+
+fs.unlink(filePath, (err) => {
+  if (err) {
+    console.error('Error deleting file:', err);
+  } else {
+    console.log('File deleted successfully.');
+  }
+});
+```
+
 **2. os:** It provides information about your computer’s operating system. Examples:
 Getting the name of the host computer and getting the right network information
 of the computer
